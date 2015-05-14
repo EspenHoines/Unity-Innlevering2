@@ -740,9 +740,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 408
-        width: 20
-        height: 20
+        y: 416
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2086,23 +2086,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NES - Super Mario Bros - Tile Set_168
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 308
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: NES - Super Mario Bros - Tile Set_169
       rect:
         serializedVersion: 2
         x: 260
-        y: 308
-        width: 20
-        height: 20
+        y: 288
+        width: 8
+        height: 24
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2270,26 +2260,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 220
-        y: 288
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NES - Super Mario Bros - Tile Set_194
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 288
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NES - Super Mario Bros - Tile Set_195
-      rect:
-        serializedVersion: 2
-        x: 260
         y: 288
         width: 20
         height: 20
@@ -4732,6 +4702,16 @@ TextureImporter:
         x: 2
         y: 289
         width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NES - Super Mario Bros - Tile Set_168
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 289
+        width: 8
         height: 14
       alignment: 0
       pivot: {x: .5, y: .5}
