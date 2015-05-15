@@ -238,7 +238,7 @@ TextureImporter:
     21300466: NES - Super Mario Bros - Mario Luigi_233
     21300468: NES - Super Mario Bros - Mario Luigi_234
     21300470: Mario_Stop_1
-    21300472: NES - Super Mario Bros - Mario Luigi_236
+    21300472: Mario_Jump_1
     21300474: NES - Super Mario Bros - Mario Luigi_237
     21300476: NES - Super Mario Bros - Mario Luigi_238
     21300478: NES - Super Mario Bros - Mario Luigi_239
@@ -2900,7 +2900,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NES - Super Mario Bros - Mario Luigi_236
+    - name: Mario_Jump_1
       rect:
         serializedVersion: 2
         x: 160

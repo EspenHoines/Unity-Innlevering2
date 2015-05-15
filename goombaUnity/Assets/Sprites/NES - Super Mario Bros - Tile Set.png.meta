@@ -3,8 +3,8 @@ guid: aad00eb0755303042a0cb88c224826b7
 TextureImporter:
   fileIDToRecycleName:
     21300000: NES - Super Mario Bros - Tile Set_0
-    21300002: NES - Super Mario Bros - Tile Set_1
-    21300004: NES - Super Mario Bros - Tile Set_2
+    21300002: Brick_1
+    21300004: QuestionBox
     21300006: NES - Super Mario Bros - Tile Set_3
     21300008: NES - Super Mario Bros - Tile Set_4
     21300010: NES - Super Mario Bros - Tile Set_5
@@ -676,7 +676,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NES - Super Mario Bros - Tile Set_1
+    - name: Brick_1
       rect:
         serializedVersion: 2
         x: 16
@@ -686,7 +686,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: NES - Super Mario Bros - Tile Set_2
+    - name: QuestionBox
       rect:
         serializedVersion: 2
         x: 384
