@@ -3,15 +3,12 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
+    public AudioClip BackgroundSound;
 
-    public bool IsMenuActive { get; set; }
-    
+    private AudioSource m_SoundSource;
+
     void Awake()
     {
-        IsMenuActive = true;
-
-        Application.runInBackground = true;
-
         DontDestroyOnLoad(gameObject);
     }
 
@@ -24,14 +21,6 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        const int Width = 400;
-        const int Height = 300;
-        
-        if (IsMenuActive)
-        {
-            Rect windowRect = new Rect((Screen.width - Width) / 2,
-                                       (Screen.width - Height) / 2,
-                                        Width, Height);
-        }
+
 	}
 }
