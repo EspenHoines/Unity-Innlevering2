@@ -20,5 +20,7 @@ public class marioScript : MonoBehaviour {
 		{
 			GetComponent<Rigidbody2D>().velocity = new Vector2 (speedForce,GetComponent<Rigidbody2D>().velocity.y);
 		}
+
+		else GetComponent<Rigidbody2D>().velocity = new Vector2 (0,GetComponent<Rigidbody2D>().velocity.y);
 	}
 }
