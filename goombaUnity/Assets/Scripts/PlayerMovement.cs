@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Net;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -9,7 +10,6 @@ public class PlayerMovement : MonoBehaviour {
 
     private Animator m_Animator;
     private Transform m_GroundCheck;
-    
 
 	// Use this for initialization
 	void Start () 
@@ -21,9 +21,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () 
     {
-
         bool isGrounded = Physics2D.OverlapPoint(m_GroundCheck.position, GroundLayers);
-
         if (Input.GetButton("Jump"))
         {
             if (isGrounded)
