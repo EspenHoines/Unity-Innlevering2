@@ -41,7 +41,7 @@ public class goombaAI : MonoBehaviour {
 			if(height > 1)
 			{
 				Death();
-				col.rigidbody.AddForce(new Vector2(0, 100));
+				col.rigidbody.AddForce(new Vector2(0, 300));
 			}
 		}
 
@@ -50,9 +50,9 @@ public class goombaAI : MonoBehaviour {
 
 	void Death() 
 	{
-		anim.SetBool ("stompedDead", true);
+		anim.SetBool ("stompedv2", true);
 		Destroy (this.gameObject, 0.5f);
-		gameObject.tag = "Neutralized";
+		gameObject.tag = "Safe";
 
 	}
 }
