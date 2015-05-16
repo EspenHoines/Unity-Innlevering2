@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             if (isGrounded)
             {
-                rigidbody2D.AddForce(Vector2.up * Jump, ForceMode2D.Impulse);
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * Jump, ForceMode2D.Impulse);
                 isGrounded = false;
             }
         }
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        this.rigidbody2D.velocity = new Vector2(hSpeed * Speed,
-                rigidbody2D.velocity.y);
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(hSpeed * Speed,
+                GetComponent<Rigidbody2D>().velocity.y);
 	}
 }

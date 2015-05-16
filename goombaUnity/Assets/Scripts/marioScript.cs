@@ -15,10 +15,10 @@ public class marioScript : MonoBehaviour {
 		
 		if(Input.GetKey(KeyCode.A))
 		{
-			rigidbody2D.velocity = new Vector2 (-speedForce,rigidbody2D.velocity.y);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (-speedForce,GetComponent<Rigidbody2D>().velocity.y);
 		} else if (Input.GetKey(KeyCode.D))
 		{
-			rigidbody2D.velocity = new Vector2 (speedForce,rigidbody2D.velocity.y);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (speedForce,GetComponent<Rigidbody2D>().velocity.y);
 		}
 	}
 }

@@ -21,7 +21,7 @@ public class goombaAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		rigidbody2D.velocity = new Vector2 (velocity, rigidbody2D.velocity.y);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (velocity, GetComponent<Rigidbody2D>().velocity.y);
 
 		colliding = Physics2D.Linecast (checkWallA.position, checkWallB.position, detector);
 	
@@ -50,7 +50,7 @@ public class goombaAI : MonoBehaviour {
 
 	void Death() 
 	{
-		anim.SetBool ("stomped", true);
+		anim.SetBool ("stompedDead", true);
 		Destroy (this.gameObject, 0.5f);
 		gameObject.tag = "Neutralized";
 
