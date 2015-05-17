@@ -20,7 +20,17 @@ public class PlayerMovement : MonoBehaviour {
         m_Animator = GetComponent<Animator>();
         m_GroundCheck = transform.FindChild("GroundCheck");
 	}
-	
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale == 1)
+                Time.timeScale = 0;
+            else Time.timeScale = 1;
+        }
+    }
+
 	// Update is called once per frame
 	void FixedUpdate () 
     {
