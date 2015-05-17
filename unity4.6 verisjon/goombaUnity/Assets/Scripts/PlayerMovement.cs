@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour {
     public float Speed = 10.0f;
     public float Jump = 1.0f;
     public LayerMask GroundLayers;
+    public GameObject JumpSound;
+
+
 
     private Animator m_Animator;
     private Transform m_GroundCheck;
@@ -26,6 +29,9 @@ public class PlayerMovement : MonoBehaviour {
         {
             if (isGrounded)
             {
+                GameObject jumpSound = Instantiate(JumpSound, this.transform.position, 
+                       this.transform.rotation) as GameObject;
+                
                 rigidbody2D.AddForce(Vector2.up * Jump, ForceMode2D.Impulse);
                 isGrounded = false;
             }
