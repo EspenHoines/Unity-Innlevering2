@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public AudioClip BackgroundSound;
 	public Text Time;
+    public Text Score;
+
+    static public int currentPoints = 0;
+    int Points;
 
     private AudioSource m_SoundSource;
 
@@ -22,6 +26,8 @@ public class GameManager : MonoBehaviour
     {
 		timer = timeStart;
 		timerLoop ();
+
+
 	}
 	
 	// Update is called once per frame
@@ -38,4 +44,9 @@ public class GameManager : MonoBehaviour
 	void timerLoop(){
 		InvokeRepeating ("Countdown", 1, 1.0F);
 	}
+
+    void points(){
+        Points += currentPoints;
+        Score.text = "Score\n" + Points;
+    }
 }

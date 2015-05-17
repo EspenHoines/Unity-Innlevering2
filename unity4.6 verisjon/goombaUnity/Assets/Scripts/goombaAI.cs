@@ -9,6 +9,8 @@ public class goombaAI : MonoBehaviour {
 	public Transform checkWallB;
 	public LayerMask detector;
 
+    public int pointValue = 100;
+
 	public bool colliding;
 
 	public Transform stompedDead;
@@ -34,6 +36,8 @@ public class goombaAI : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
+        GameManager.currentPoints += pointValue;
+
 		if (col.gameObject.tag == "Player") 
 		{
 			float height = col.contacts[0].point.y + stompedDead.position.y;
@@ -54,5 +58,6 @@ public class goombaAI : MonoBehaviour {
 		Destroy (this.gameObject, 0.5f);
 		gameObject.tag = "safe";
 
+        
 	}
 }
