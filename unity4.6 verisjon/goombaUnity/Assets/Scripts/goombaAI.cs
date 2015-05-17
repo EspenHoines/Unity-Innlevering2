@@ -50,9 +50,9 @@ public class goombaAI : MonoBehaviour {
 
 	void Death() 
 	{
-		anim.SetBool ("stomped", true);
+		anim.SetBool ("Stomped", true);
 		Destroy (this.gameObject, 0.5f);
-		gameObject.tag = "Neutralized";
+		gameObject.tag = "safe";
 
 	}
 }
